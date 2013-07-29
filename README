@@ -1,0 +1,55 @@
+-----
+Djikstra Maps Prototype
+-----
+Written by Michał Walczak <mw@michalwalczak.eu>
+with huge help from Derrick Creamer. [Thank you!]
+License: WTFPLv2 (included)
+-----
+
+Basic prototype of the Djikstra Maps concept by Brian Walker "Pender".
+<http://roguebasin.roguelikedevelopment.org/index.php?title=The_Incredible_Power_of_Dijkstra_Maps>
+
+A very simple implementation, doesn't account for special cases like multiplying
+and reversing maps for different effects.
+This one can also be improved by wrapping operations into more general functions
+and not using so many global variables, but it hardly matters in this example.
+
+Check the code for line by line comments.
+
+Please ignore the mess around the frontier list sorting - obviously a vector,
+a neater linked list would create a simpler and more readable search loop.
+I may improve on it in the future if I hear enough complaints :]
+
+8-way movement assumed by default with constant movement cost of 1
+To easly change into a 4-way example search for "4-way" in the code.
+
+Press ESC to quit.
+
+-----
+
+Dependency:
+    Requires SFML2 and CSFML.
+
+Building and running:
+    With dependencies fulfilled run:
+    [make clean]
+    make
+    make run
+
+    for rapid iteration this can be chained to:
+
+    make clean && make && make run
+
+-----
+
+Suggestions, complaints, hate-mail,
+links to other implementations (that I will include in this README), etc:
+Michał Walczak <mw@michalwalczak.eu>
+or
+magikmw on #rgrd@irc.quakenet.org
+
+-----
+
+Mandrill font by Tommy Ettinger
+Link: <http://fontstruct.com/fontstructions/show/mandrill_2>
+Licensed under CC Attribution Share Alike
